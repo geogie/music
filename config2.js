@@ -38,7 +38,15 @@ function aplayer1 () {
         container: document.getElementById('aplayer1'),
         theme: '#F57F17',
         lrc: 3,
-        audio: [{
+        audio: [
+            {
+                name: '不要说话',
+                artist: '陈奕迅合集',
+                url: './不要说话-陈奕迅.mp3',
+                cover: './不要说话-陈奕迅.jpg',
+                lrc: './不要说话-陈奕迅.lrc',
+                theme: '#ebd0c2'
+            }, {
             name: '光るなら',
             artist: 'Goose house',
             url: 'https://moeplayer.b0.upaiyun.com/aplayer/hikarunara.mp3',
