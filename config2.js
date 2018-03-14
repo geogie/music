@@ -6,7 +6,7 @@ docute.init({
     ]
 });
 
-function player () {
+function player() {
     return function (context) {
         context.event.on('landing:updated', function () {
             console.log('landing:updated');
@@ -25,7 +25,7 @@ function player () {
     };
 }
 
-function clearPlayer () {
+function clearPlayer() {
     for (let i = 0; i < 10; i++) {
         if (window['ap' + (i + 1)]) {
             window['ap' + (i + 1)].destroy();
@@ -33,20 +33,26 @@ function clearPlayer () {
     }
 }
 
-function aplayer1 () {
+function aplayer1() {
     window.ap1 = new APlayer({
         container: document.getElementById('aplayer1'),
         theme: '#F57F17',
         lrc: 3,
-        audio: [
-            {
-                name: '不要说话',
-                artist: '陈奕迅合集',
-                url: './不要说话-陈奕迅.mp3',
-                cover: './不要说话-陈奕迅.jpg',
-                lrc: './不要说话-陈奕迅.lrc',
-                theme: '#ebd0c2'
-            }, {
+        audio: [{
+            name: '冰雨',
+            artist: '刘德华合集',
+            url: 'http://music.163.com/song/media/outer/url?id=110397.mp3',
+            cover: 'http://p1.music.126.net/NcVf7w7gtyvmfw0OGI8W6A==/888405395243414.jpg',
+            lrc: './冰雨(Live) - live-刘德华.lrc',
+            theme: '#ebd0c2'
+        }, {
+            name: '不要说话',
+            artist: '陈奕迅合集',
+            url: './不要说话-陈奕迅.mp3',
+            cover: './不要说话-陈奕迅.jpg',
+            lrc: './不要说话-陈奕迅.lrc',
+            theme: '#ebd0c2'
+        }, {
             name: '光るなら',
             artist: 'Goose house',
             url: 'https://moeplayer.b0.upaiyun.com/aplayer/hikarunara.mp3',
